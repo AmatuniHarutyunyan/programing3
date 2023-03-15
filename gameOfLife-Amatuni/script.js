@@ -157,3 +157,6 @@ function draw() {
         chickenArr[i].mul()
     }
 }
+
+
+///dfgsfdsgyfgsygdrsy
