@@ -1,7 +1,6 @@
-class Predator{
+class Predator extends LivingCreater{
     constructor(x,y){
-              this.x = x
-              this.y = y
+              super(x,y)
               this.energy = 12
               this.directions = []
     }
