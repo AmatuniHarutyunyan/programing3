@@ -1,4 +1,5 @@
-class Predator extends LivingCreater{
+let LivingCreater = requre*("./LivingCreater")
+module.exports = class Predator extends LivingCreater{
     constructor(x,y){
               super(x,y)
               this.energy = 12

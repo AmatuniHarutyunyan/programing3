@@ -1,4 +1,5 @@
-class Grass extends LivingCreater {
+let LivingCreater = requaire("./LivingCraeter")
+module.exports = class Grass extends LivingCreater {
     constructor(x,y){
             super(x,y)
             this.multiply = 0

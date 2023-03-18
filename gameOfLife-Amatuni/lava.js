@@ -1,7 +1,7 @@
-class Lava{
+let LivingCreater = requre ("./LivingCreater")
+module.exports =  class Lava  extends LivingCreater{
     constructor(x, y) {
-        this.x = x
-        this.y = y
+        super(x,y)
         this.energy = 15
         this.directions = []
     }
