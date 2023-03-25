@@ -54,7 +54,7 @@ module.exports =class Man extends LivingCreater{
     mul() {
         let emptyCell = this.chooseCell(0);
         let newCell = random(emptyCell)
-
+ 
         if (newCell && this.energy > 7) {
             let newX = newCell[0];
             let newY = newCell[1];
