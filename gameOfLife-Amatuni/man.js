@@ -46,7 +46,7 @@ module.exports =class Man extends LivingCreater{
                 }
             }
         }
-
+   
 
         return found;
     }
