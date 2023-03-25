@@ -1,4 +1,4 @@
-let LivingCreater = requre ("./LivingCreater")
+let LivingCreater = require ("./LivingCreater")
 module.exports =  class Lava  extends LivingCreater{
     constructor(x, y) {
         super(x,y)

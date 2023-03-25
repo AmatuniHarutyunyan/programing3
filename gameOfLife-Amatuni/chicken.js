@@ -1,4 +1,7 @@
-class Chicken extends LivingCreater{
+let LivingCreater= require("./LivingCreater")
+
+
+module.exports=class Chicken extends LivingCreater{
     constructor(x, y) {
         super(x,y)
         this.energy = 10

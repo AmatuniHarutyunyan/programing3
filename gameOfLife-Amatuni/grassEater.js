@@ -36,6 +36,12 @@ module.exports =class GrassEater extends LivingCreater {
 
         return found;
     }
+    random(ch){
+        let found = this.chooseCell(ch);
+        let result = Math.floor(Math.random()*found.length)
+        return found[result];
+        }
+
     //բազմանալ
     mul() {
         let emptyCell = this.chooseCell(0);
@@ -56,8 +62,8 @@ module.exports =class GrassEater extends LivingCreater {
 
 //ուտել
     eat() {
-        let emptyCell = this.chooseCell(1);
-        let newCell = random(emptyCell)
+        // let emptyCell = this.chooseCell(1);
+        let newCell = this.random(1)
 
         if (newCell) {
             this.energy += 5;

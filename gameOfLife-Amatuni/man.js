@@ -1,4 +1,4 @@
-let LivingCreater = requre("./LivingCreater")
+let LivingCreater = require("./LivingCreater")
 module.exports =class Man extends LivingCreater{
     constructor(x, y) {
         super(x,y)
