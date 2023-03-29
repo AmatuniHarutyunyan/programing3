@@ -1,3 +1,12 @@
+var socket = io()
+
+
+
+
+
+
+
+
 // function matrixGenerator(matrixSize,grass,grassEater,predator,man,chicken,lava) {
 //     var matrix = []
 
@@ -109,7 +118,7 @@ var side = 25
 
 
 
-function draw() {
+function colors(matrix) {
     
       for (let y = 0; y < matrix.length; y++) {
         for (let x = 0; x < matrix[y].length; x++) {
@@ -137,6 +146,11 @@ function draw() {
           
       }
     }
+socket.on("send matrix",colors)
+
+
+
+
 //       for(let i in  grassArr){
 //             grassArr[i].mul()
 //       }

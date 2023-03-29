@@ -72,6 +72,9 @@ function matrixGenerator(matrixSize,grass,grassEater,predator,man,chicken,lava) 
 
         matrix[y][x] = 6
        }
+    io.emit("sent matrix",matrix)
+
+
     return matrix
 }
 matrix = matrixGenerator(30,40,15,5,10,0,25)
@@ -138,5 +141,6 @@ matrix = matrixGenerator(30,40,15,5,10,0,25)
     for(let i in chickenArr){
         chickenArr[i].mul()
     }
+    io.emit("sent matrix",matrix)
  }
  setInterval(mull,1000)

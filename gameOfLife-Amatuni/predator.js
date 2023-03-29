@@ -45,7 +45,13 @@ module.exports = class Predator extends LivingCreater{
       return found;
   }
 
-
+    random(ch){
+    let found = this.chooseCell(ch);
+    let found1 = this.choseCell(ch);
+    let finalfound = found.concat(found1);
+    let result = Math.floor(Math.random()*found.length)
+    return found[result];
+    }
   mul() {
       let emptyCell = this.chooseCell(0);
       let newCell = random(emptyCell)
@@ -64,8 +70,9 @@ module.exports = class Predator extends LivingCreater{
 
 
   eat() {
-      let emptyCell = this.chooseCell(1,2);
-      let newCell = random(emptyCell)
+    //   let emptyCell = this.chooseCell(1,2);
+      let newCell = this.random(1,2);
+      
 
       if (newCell) {
           this.energy += 5;

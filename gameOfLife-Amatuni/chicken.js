@@ -20,10 +20,14 @@ module.exports=class Chicken extends LivingCreater{
         ]; 
     
     }
-
+    random(ch){
+        let found = this.chooseCell(ch);
+        let result = Math.floor(Math.random()*found.length)
+        return found[result];
+        }
     mul() {
         let emptyCell = this.chooseCell(0);
-        let newCell = random(emptyCell)
+        let newCell = this.random(0);
 
         if (newCell && this.energy > 7) {
             let newX = newCell[0];

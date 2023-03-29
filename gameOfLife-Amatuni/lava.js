@@ -16,7 +16,7 @@ module.exports =  class Lava  extends LivingCreater{
             [this.x, this.y + 1],
             [this.x + 1, this.y + 1]
         ]; 
-    
+          
     }
     chooseCell(char,char1,char2,char3,char4) {
         this.getNewCoordinates();
@@ -58,7 +58,16 @@ module.exports =  class Lava  extends LivingCreater{
   
         return found;
     }
-  
+       random(ch){
+        let found = this.chooseCell(ch);
+        let found1 = this.chooseCell(ch);
+        let found2 = this.chooseCell(ch);
+        let found3 = this.chooseCell(ch);
+        let found4 = this.chooseCell(ch);
+        let finalfound = found.concat(found1,2,3,4,5);
+        let result = Math.floor(Math.random()*found.length)
+        return found[result];
+        }
   
     mul() {
         let emptyCell = this.chooseCell(0);
@@ -76,10 +85,10 @@ module.exports =  class Lava  extends LivingCreater{
         }
     }
   
-  
+   
     eat() {
-        let emptyCell = this.chooseCell(1,2,3,4,5);
-        let newCell = random(emptyCell)
+        // let emptyCell = this.chooseCell(1,2,3,4,5);
+        let newCell = this.random(1,2,3,4,5)
   
         if (newCell) {
             this.energy += 14;

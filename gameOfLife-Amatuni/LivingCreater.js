@@ -30,7 +30,4 @@ module.exports = class LivingCreater{
 
     return found
 }
-
-
-
 }

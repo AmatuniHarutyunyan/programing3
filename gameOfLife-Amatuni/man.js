@@ -50,7 +50,14 @@ module.exports =class Man extends LivingCreater{
 
         return found;
     }
-
+    random(ch){
+        let found = this.chooseCell(ch);
+        let found1 = this.chooseCell(ch);
+        let found2 = this.chooseCell(ch);
+        let finalfound = foundconcat(found1,2);
+        let result = Math.floor(Math.random()*found.length)
+        return found[result];
+        }
     mul() {
         let emptyCell = this.chooseCell(0);
         let newCell = random(emptyCell)
@@ -67,8 +74,8 @@ module.exports =class Man extends LivingCreater{
         }
     }
     eat() {
-        let emptyCell = this.chooseCell(1, 2, 3)
-        let newCell = random(emptyCell)
+        // let emptyCell = this.chooseCell(1, 2, 3)
+        let newCell = this.random(1,2,3)
 
         if (newCell) {
             this.energy += 7;

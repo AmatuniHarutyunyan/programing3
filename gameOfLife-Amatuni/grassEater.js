@@ -97,8 +97,8 @@ module.exports =class GrassEater extends LivingCreater {
 
     //քայլել
     move() {
-        let emptyCell = this.chooseCell(0);
-        let newCell = random(emptyCell)
+        // let emptyCell = this.chooseCell(0);
+        let newCell = this.random(0)
 
         if (newCell) {
             let newX = newCell[0];
