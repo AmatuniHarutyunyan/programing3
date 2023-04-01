@@ -1,6 +1,4 @@
 let LivingCreater= require("./LivingCreater")
-
-
 module.exports=class Chicken extends LivingCreater{
     constructor(x, y) {
         super(x,y)
@@ -26,7 +24,7 @@ module.exports=class Chicken extends LivingCreater{
         return found[result];
         }
     mul() {
-        let emptyCell = this.chooseCell(0);
+        // let emptyCell = this.chooseCell(0);
         let newCell = this.random(0);
 
         if (newCell && this.energy > 7) {
@@ -41,8 +39,8 @@ module.exports=class Chicken extends LivingCreater{
         }
     }
     move() {
-        let emptyCell = this.chooseCell(0);
-        let newCell = random(emptyCell)
+        // let emptyCell = this.chooseCell(0);
+        let newCell = this.random(0)
 
         if (newCell) {
             let newX = newCell[0];

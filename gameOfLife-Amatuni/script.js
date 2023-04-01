@@ -85,10 +85,8 @@ var side = 25
 // var chickenArr = []
 // var lavaArr = []
 
-// function setup() {
-//     frameRate(15)
-//     createCanvas(matrix[0].length * side ,matrix.length * side)
-
+function setup() {
+    createCanvas(30 * side ,30 * side)
 //     for (let y = 0; y < matrix.length; y++) {
 //         for (let x = 0; x < matrix[y].length; x++) {
        
@@ -114,12 +112,10 @@ var side = 25
 //            }
 //         }
         
-//     }
-
+    }
 
 
 function colors(matrix) {
-    
       for (let y = 0; y < matrix.length; y++) {
         for (let x = 0; x < matrix[y].length; x++) {
           
